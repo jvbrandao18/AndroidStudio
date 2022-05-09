@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">The Fixer</string>
+    <string name="entrar">Entrar</string>
+    <string name="text_cadastro">Não possui conta? Crie uma aqui!</string>
+    <string name="title_cadastro">Cadastre-se</string>
+
+</resources>
