@@ -7,31 +7,33 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class FormCadastroCliente extends AppCompatActivity {
+public class TelaServicosCliente extends AppCompatActivity {
 
-    private Button bt_cadastrar;
-
+    private Button bt_deslogar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_form_cadastro_cliente);
+        setContentView(R.layout.activity_tela_servicos_cliente);
 
         getSupportActionBar().hide();
         IniciarComponentes();
 
-        bt_cadastrar.setOnClickListener(new View.OnClickListener() {
+        bt_deslogar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(FormCadastroCliente.this, TelaPrincipalCliente.class);
+                Intent intent = new Intent(TelaServicosCliente.this, FormLogin.class);
                 startActivity(intent);
+                finish();
             }
+
         });
 
     }
 
+
+
     private void IniciarComponentes(){
-        bt_cadastrar = findViewById(R.id.bt_cadastrar);
+        bt_deslogar = findViewById(R.id.bt_deslogar);
     }
 }

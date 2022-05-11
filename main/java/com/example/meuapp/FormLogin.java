@@ -28,8 +28,8 @@ public class FormLogin extends AppCompatActivity {
 
         bt_entrar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
-                Intent intent = new Intent(FormLogin.this, TelaPrincipal.class);
+                //Para testar a outra tela mudar o "TelaServicosCliente.class" por "TelaPrincipalCliente.class"
+                Intent intent = new Intent(FormLogin.this, TelaServicosCliente.class);
                 startActivity(intent);
 
             }
